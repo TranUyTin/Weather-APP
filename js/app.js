@@ -18,18 +18,35 @@ const changeWeather = async () =>{
     city.innerText = data.location.name
     country.innerText = data.location.country
     time.innerText = data.location.localtime
-    const temp = valueTemp
-    temp.innerText = data.current.temp_c  
-    temp.innerHTML += `<sup>o</sup>C`
+    const temp = data.current.temp_c
+    valueTemp.innerText = data.current.temp_c  
+    valueTemp.innerHTML += `<sup>o</sup>C`
     shortDesc.innerText = data.current.condition.text
     moreDesc.innerText = data.current.vis_miles + ' (m)'
     wind.innerText = data.current.wind_mph + ' (m/s)'
     cloud.innerText = data.current.cloud + ' (%)'
+    console.log(temp.value);
+    if(temp >= 26){
+        body.setAttribute('class','hot')
+        ,container.setAttribute('id','hot')
+    }
 
-    // temp >= 18
-    //     ? (body.setAttribute('class','cold'), container.setAttribute('class','cold'))
-    //     : (body.setAttribute('class','hot'), container.setAttribute('class','hot'))
-    // console.log(document.querySelector('body'))
+    if(temp >= 18 && temp <26 ){
+        body.setAttribute('class','autumn')
+        ,container.setAttribute('id','autumn')
+    }
+
+    if(temp >= 10 && temp <18 ){
+        body.setAttribute('class','cold')
+        ,container.setAttribute('id','cold')
+    }
+    if(temp <10 ){
+        body.setAttribute('class','winter')
+        ,container.setAttribute('id','winter')
+    }
+
+    console.log(document.querySelector('body'))
+    console.log(container)
 }
 
 

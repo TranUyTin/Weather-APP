@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -10,17 +10,37 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("/Day9/image/cold.png") no-repeat center/cover;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../image/cold.png') no-repeat center/cover;
 }
-/* body.hot {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("C:/Users/tranu/OneDrive/Desktop/Data/Practice/Day9/image/hot.jfif") no-repeat center/cover;
+body.hot {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),url('../image/hot.jfif') no-repeat center/cover;
 }
-container.hot {
-    background: url("/C:/Users/tranu/OneDrive/Desktop/Data/Practice/Day9/image/hot.jfif") no-repeat center/cover;
-} */
+.container#hot {
+    background: url('../image/hot.jfif') no-repeat center/cover;
+
+}
+
+body.autumn {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),url('../image/autumn.jfif') no-repeat center/cover;
+}
+.container#autumn {
+    background: url('../image/autumn.jfif') no-repeat center/cover;
+
+}
+
+body.winter {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),url('../image/winter.jfif') no-repeat center/cover;
+    color:black
+
+}
+.container#winter {
+    background: url('../image/winter.jfif') no-repeat center/cover;
+    /* color:black */
+
+}
 .container {
     width: 350px;
-    background: url("/Day9/image/cold.png") no-repeat center/cover;
+    background: url("../image/cold.png") no-repeat center/cover;
     /* background: greenyellow; */
     padding: 30px;
     border-radius: 10px;
