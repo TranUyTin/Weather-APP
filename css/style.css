@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("/Day9/image/cold.png") no-repeat center/cover;
+}
+/* body.hot {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("C:/Users/tranu/OneDrive/Desktop/Data/Practice/Day9/image/hot.jfif") no-repeat center/cover;
+}
+container.hot {
+    background: url("/C:/Users/tranu/OneDrive/Desktop/Data/Practice/Day9/image/hot.jfif") no-repeat center/cover;
+} */
+.container {
+    width: 350px;
+    background: url("/Day9/image/cold.png") no-repeat center/cover;
+    /* background: greenyellow; */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 0 15px 0 15px;
+    transition: 0.3s;
+}
+
+.search:focus {
+    background-color: #fff;
+    border-radius: 15px 0 15px 0;
+}
+
+.container_heading {
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    margin: 30px 0px 5px 0px;
+}
+
+.time {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.temperature {
+    font-size: 55px;
+    color: #fff;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    font-weight: 800;
+    box-shadow: 5px 5px rgb(0, 0, 0, 60%);
+    text-shadow: 5px 5px rgb(0, 0, 0, 40%);
+    margin: 20px 20px 30px;
+}
+
+.short_desc {
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    text-shadow: 5px 5px rgb(0, 0, 0, 20%);
+    color: #fff;
+}
+
+.more_desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.vision,
+.wind,
+.cloud {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.vision span,
+.wind span,
+.cloud span {
+    margin: 10px 0;
+}
